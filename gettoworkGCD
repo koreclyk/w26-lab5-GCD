@@ -1,0 +1,31 @@
+// fleshing out the program
+
+/*
+USER INPUT: Chapter 5
+*Scanner
+*Logical operators
+*a and b
+*validate input/exit if invalid
+
+LOOPS: Chapter 7
+*while loops / nested loops
+*updating variables inside loops
+*repeat division by 2
+*loop until a==b
+
+Operators: Chapter 2
+*% to check even/odd
+*/ division
+*assignment operators
+>>> a % 2 == 0 (checking if a is even)
+>>> a = a / 2 (does the division)
+
+Methods: Chapter 6
+*public static int gcd(int a, int b)
+
+Debugging and Design: Chapter 3
+*Variable values
+*testing
+*avoid infinite loops (outside of personal time)
+
+*/
