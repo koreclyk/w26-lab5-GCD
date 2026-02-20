@@ -28,12 +28,15 @@ Debugging and Design: Chapter 3
 *testing
 *avoid infinite loops (outside of personal time)
 
+GCD CALCS:
+if a % 2 == 0 && b % 2 == 0
+
 */
 
 import java.util.Scanner;
 
-class gettoworkGCD {
-   public static void main(String[] args) {
+class bIGCD {
+   public static void main(String[] args) { // if anything larger than an int is input, there will be an error
       Scanner input = new Scanner(System.in);
 
       System.out.print("enter a: ");
@@ -43,8 +46,37 @@ class gettoworkGCD {
       
       if (a <= 0 || b <= 0) {
          System.out.println("THIS AINT IT!");
-         break;
+         return; // BREAK - exits loop or switch while RETURN exits the method itself to stop the logic from running regardless of the answer
       }
 
 
+
+      int d = 0;
+
+      while (a% 2 == 0 && b % 2 == 0){
+         a /= 2;
+         b /= 2;
+         d++;
+      }
+      
+      
+      while (a != b){
+         if (a > b){
+            a = a - b;
+            while (a % 2 == 0) {
+               a /= 2;
+            }
+         } else {
+            b = b - a;
+            while (b % 2 == 0){
+               b /= 2;
+            }
+         }
+      }
+      
+      
+      
+      double calcbIGCD = Math.pow(2, d) * a;
+      System.out.printf("The GCD is: %.1f", calcbIGCD);
+   }
 }
