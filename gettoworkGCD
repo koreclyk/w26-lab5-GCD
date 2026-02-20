@@ -29,3 +29,22 @@ Debugging and Design: Chapter 3
 *avoid infinite loops (outside of personal time)
 
 */
+
+import java.util.Scanner;
+
+class gettoworkGCD {
+   public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+
+      System.out.print("enter a: ");
+      int a = input.nextInt();
+      System.out.print("enter b: ");
+      int b = input.nextInt();
+      
+      if (a <= 0 || b <= 0) {
+         System.out.println("THIS AINT IT!");
+         break;
+      }
+
+
+}
